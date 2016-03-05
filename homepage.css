@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+h1{
+  color: white; 
+  font-family:"Exo 2"; 
+}
+
+.links{
+  color: white; 
+  font-size: 20px; 
+  font-weight: bold; 
+  padding: 8px; 
+  text-transform: uppercase; 
+  text-align: right;
+  float: right;
+}
+
+hr {
+  color: #2BD9D0;
+  background-color: #2BD9D0;
+  height: 1px;
+}
+/* 
+.motto{
+  font-size: 20px; 
+  border-bottom: 1px solid #000;
+  display: inline-block; 
+  margin-left: 350px; 
+}
+ */
+.video{
+	position: absolute; 
+    right: 0; 
+    bottom: 0;
+	top: 78;
+    min-width: 100%; 
+    min-height: 70%;
+    width: auto; 
+    height: 550px;
+	display: block;
+    background-size: cover;
+    overflow: hidden;
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:60px;
+   width:100%;
+   background:black;
+   text-align: center;
+}
+
+a.footer{
+	font-family:"Exo 2"; 
+	text-decoration: none;
+	color: white;
+}
