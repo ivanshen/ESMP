@@ -1,12 +1,20 @@
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Exo+2:300);
 
+body {
+  background-color: transparent;
+}
+
 .nav > li > a:hover{
     background-color: #2BD9D0;
 }
 
 .nav > li > a:focus{
     background-color: #2BD9D0;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -63,7 +71,7 @@
   background: #555555;
   border: none;
   border-bottom: 2px solid #e9e9e9;
-  color: #666;
+  color: white;
   font-family: 'Exo 2', sans-serif;
   font-size: 1em;
   height: 50px;
@@ -86,7 +94,7 @@
   background: #555555;
   border: none;
   border-bottom: 2px solid #e9e9e9;
-  color: #666;
+  color: white;
   font-family: 'Exo 2', sans-serif;
   font-size: 1em;
   height: 50px;
@@ -176,4 +184,4 @@ form {
 #form2 {
 	position: fixed;
 	top: -100px;
-} */
+} */ 

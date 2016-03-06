@@ -23,6 +23,13 @@ hr {
   background-color: #2BD9D0;
   height: 1px;
 }
+
+#hr2 {
+  color: #2BD9D0;
+  background-color: #2BD9D0;
+  height: 1px;
+}
+
 /* 
 .motto{
   font-size: 20px; 
@@ -35,7 +42,7 @@ hr {
 	position: absolute; 
     right: 0; 
     bottom: 0;
-	top: 78;
+	top: 0;
     min-width: 100%; 
     min-height: 70%;
     width: auto; 
@@ -43,13 +50,14 @@ hr {
 	display: block;
     background-size: cover;
     overflow: hidden;
+	z-index: -1;
 }
 
 footer {
    position:fixed;
    left:0px;
    bottom:0px;
-   height:60px;
+   height:70px;
    width:100%;
    background:black;
    text-align: center;
