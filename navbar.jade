@@ -1,0 +1,49 @@
+     head
+      title PONDIR
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+      //
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      link(rel='stylesheet', type='text/css', href='navbar.css', media='screen')
+      link(href='https://fonts.googleapis.com/css?family=Exo+2:200', rel='stylesheet', type='text/css')
+    .navbar.navbar-custom
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.pull-left(href='#')
+            img(width='30px', height='50px', src='Logo.png')
+          a.navbar-brand(href='#') PONDIR
+        .collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        if !user
+          li(class=(title == 'Login') ? 'active' : undefined)
+            a(href='/login') Login
+          li(class=(title == 'Create Account') ? 'active' : undefined)
+            a(href='/account/signup-investor') Create Account
+        else
+          li.dropdown(class=(title == 'Account Management') ? 'active' : undefined)
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              if user.profile.picture
+                img(src='#{user.profile.picture}')
+              else
+                img(src='#{user.gravatar(60)}')
+              | #{user.profile.name || user.email || user.id}&nbsp;
+              i.caret
+            ul.dropdown-menu
+			  li
+                a(href='/account') My Account
+              li
+                a(href='/forecast') Forecast
+              li
+                a(href='/forecast') Contacts
+              li
+                a(href='/forecast') Settings
+              li.divider
+              li
+                a(href='/logout') Logout

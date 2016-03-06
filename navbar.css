@@ -1,0 +1,52 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300);
+
+body {
+  background-color: transparent;
+}
+
+.nav > li > a:hover{
+    background-color: #2BD9D0;
+}
+
+.nav > li > a:focus{
+    background-color: #2BD9D0;
+}
+
+.navbar-custom {
+    margin: 0;
+}
+
+.navbar-brand {
+	color: white;
+	font-size: 40px;
+}
+
+.navbar-custom .navbar-brand:hover, 
+.navbar-custom .navbar-brand:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.navbar-custom {
+    background-color: black;
+	border-bottom-color: #2BD9D0;
+	border-bottom-width: 3px;
+	font-family: "Exo 2";
+}
+
+
+.navbar-custom .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-custom .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #2BD9D0;
+    color: black;
+}
+
+.navbar-custom .dropdown-menu {
+     background-color: #2BD9D0;
+     color:black;
+	 font-family:"Exo 2";
+}

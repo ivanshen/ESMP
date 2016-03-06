@@ -1,8 +1,37 @@
-/* Fonts */
-@import url(https://fonts.googleapis.com/css?family=Exo+2:300);
-
 body {
-  background-color: transparent;
+  background-color: black;
+  overflow: hidden; 
+}
+
+h1{
+  color: white; 
+  font-family: "Exo 2"; 
+}
+
+#title{
+  color: white; 
+  font-family: "Exo 2"; 
+  font-size: 30px; 
+  font-weight: bold; 
+  transform: rotate(-90deg);
+  margin-top: 100px; 
+  position: float;  
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-xs-2:hover {
+  background-color: #2BD9D0;
+  height: 1000px;
 }
 
 .nav > li > a:hover{
@@ -165,6 +194,10 @@ form {
   background: #16B6B1;
 }
 
+body a:hover {
+	text-decoration: none;
+}
+
 .form-footer {
   font-size: 1em;
   padding: 2em 0;
@@ -180,8 +213,3 @@ form {
 .form-footer a:hover {
   border-bottom: 1px dotted #2BD9D0;
 }
-/* 
-#form2 {
-	position: fixed;
-	top: -100px;
-} */ 
