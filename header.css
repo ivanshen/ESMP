@@ -48,6 +48,7 @@ body {
 
 /* Form Layout */
 .form-wrapper {
+  top: -100px;
   background: black;
   margin: 3em auto;
   padding: 0 1em;
